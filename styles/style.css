@@ -3,9 +3,16 @@ html,
 body,
 div,
 h1,
+button,
 p {
 	margin: 0;
 	padding: 0;
+}
+
+button {
+	border: 0;
+	outline: 0;
+	cursor: pointer;
 }
 
 body {
@@ -13,36 +20,27 @@ body {
 }
 
 header {
-	display: block;
-	width: 100%;
-	margin: 0 auto;
-	text-align: center;
 	padding: 10px 0;
-	overflow: hidden;
+	text-align: center;
+	line-height: 20px;
 }
 
 header h1,
-header a,
+header button,
 header p {
 	display: inline-block;
+	font-size: 20px;
 	margin-right: 10px;
 }
 
-header h1,
-header p {
-	height: 50px;
-	line-height: 50px;
-}
-
-header #newgame {
+header button {
 	padding: 10px;
-	background: #8f7a66;
 	color: #fff;
-	border-radius: 10px;
-	text-decoration: none;
+	background: #8f7a66;
+	border-radius: 5px;
 }
 
-header #newgame:hover {
+header button:hover {
 	background: #9f8b77;
 }
 
